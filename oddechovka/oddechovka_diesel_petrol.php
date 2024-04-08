@@ -151,5 +151,4 @@ $myPetrolCar->refill(10);
 // Check fuel levels after refill
 echo "Audi (Diesel) fuel level after refill: " . $myDieselCar->getRemainingFuel() . " liters\n";
 echo "Skoda (Petrol) fuel level after refill: " . $myPetrolCar->getRemainingFuel() . " liters\n";
-*/
 ?>
