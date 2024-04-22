@@ -176,7 +176,7 @@ echo "Skoda (Petrol) fuel level after refill: " . $myPetrolCar->getRemainingFuel
 
 $myDieselCar = new DieselVehicle("skoda", 32, 7.6);
 // extract vehicle properties
-//$brand = $myDieselCar->znacka;
+$brand = $myDieselCar->znacka;
 $capacity = $myDieselCar->objemNadrze;
 $consumption = $myDieselCar->spotreba;
 ?>
@@ -193,10 +193,7 @@ $consumption = $myDieselCar->spotreba;
         <tr>
             <th>Brand</th>
             <td><?php echo $brand; ?></td>
-        </tr>
-        <tr>
-            <th>Fuel tank capacity (liters) </th>
-            <td><?php echo $capacity; ?>
+            <td><?php echo $myDieselCar->znacka; ?></td>
         </tr>
         <tr>
             <th>Fuel consumption (liters/100km)</th>

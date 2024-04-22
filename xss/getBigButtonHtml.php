@@ -1,11 +1,12 @@
 <?php
+
 function getBigButton($url, $text){
     // validate input 
     if (!filter_var($url, FILTER_VALIDATE_URL)){
         throw new InvalidArgumentException("Invalid URL");
     }
     
-    // escape user input html context
+    // escape user input html context )
     $escapedText = htmlspecialchars($text, ENT_QUOTES, 'UTF-8');
 
     // build button with escaped text
